@@ -54,3 +54,6 @@ keymap.set('n', '<leader>f', ':NvimTreeFindFile!<CR>', { noremap = true })
 -- Setup test behavior
 keymap.set('n', '<leader>tt', ':TestNearest -v<CR>', { noremap = true, silent = true })
 keymap.set('n', '<leader>tf', ':TestFile -v<CR>', { noremap = true, silent = true })
+
+-- Setup file formatting
+keymap.set('n', '<leader>ff', ':lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
