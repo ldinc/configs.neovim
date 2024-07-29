@@ -1,0 +1,3 @@
+- [ ] https://github.com/folke/todo-comments.nvim
+- [ ] Setup telescope
+- [ ] Fix ld colorscheme (set more fine w\ nvim & frames)
