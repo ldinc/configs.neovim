@@ -56,6 +56,8 @@ keymap.set('n', '<leader>f', ':NvimTreeFindFile!<CR>', { noremap = true })
 keymap.set('n', '<leader>tt', ':TestNearest -v<CR>', { noremap = true, silent = true })
 keymap.set('n', '<leader>tf', ':TestFile -v<CR>', { noremap = true, silent = true })
 
+-- TODO: move to lsp block with other mappings
+
 -- Setup file formatting
 keymap.set('n', '<leader>ff', ':lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
 
@@ -78,3 +80,12 @@ keymap.set('n', '<leader>ff', ':lua vim.lsp.buf.format()<CR>', { noremap = true,
 --         -- })
 --     end,
 -- })
+
+-- DEBUG
+keymap.set("n", "<C-e>",
+	function()
+		local result = vim.treesitter.get_captures_at_cursor(0)
+		print(vim.inspect(result))
+	end,
+	{ noremap = true, silent = false }
+)

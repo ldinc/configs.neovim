@@ -55,11 +55,11 @@ return {
 				},
 			})
 
-			vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>",
-				{ noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
-			vim.api.nvim_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>",
-				{ noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", { noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "grn", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true, silent = false })
+			vim.api.nvim_set_keymap("n", "gref", "<cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = false })
 		end,
 	},
 }
