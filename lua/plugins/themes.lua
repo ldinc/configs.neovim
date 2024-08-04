@@ -31,10 +31,8 @@ return {
 		lazy = false,
 		priority = 999,
 		config = function ()
-			-- TODO: change to ld
 			require('colorscheme').load()
-
-			-- vim.cmd([[colorscheme ld]])
+			require('feline-config').register()
 		end,
 	}
 }
