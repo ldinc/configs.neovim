@@ -33,6 +33,7 @@ return {
 		config = function ()
 			require('colorscheme').load()
 			require('feline-config').register()
+			-- TODO: added setup for nvim-tree theme
 		end,
 	}
 }

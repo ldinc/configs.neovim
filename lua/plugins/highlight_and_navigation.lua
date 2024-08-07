@@ -18,6 +18,7 @@ return {
 					'bash',
 					'fish',
 					'json',
+					'html',
 					'markdown',
 					'markdown_inline',
 					'mermaid',
