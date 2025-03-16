@@ -29,7 +29,7 @@ require("lazy").setup({
 	-- colorscheme that will be used when installing plugins.
 	install = {
 		colorscheme = { "vim-ld-theme" },
-		statusline = { "feline" },
+		statusline = { "nvim-lualine/lualine.nvim" },
 	},
 	-- automatically check for plugin updates
 	checker = {
