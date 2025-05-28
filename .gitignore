@@ -1,3 +1,12 @@
-bundle
+# Ignore plugin manager directories
+bundle/
 
-./lazy-lock.json
+# Ignore Neovim generated files
+*.swp
+*.swo
+*~
+.session
+.luarc.json
+
+# Ignore plugin lock files (for lazy.nvim)
+lazy-lock.json
